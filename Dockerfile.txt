@@ -1,0 +1,9 @@
+FROM openjdk
+
+WORKDIR /test
+
+COPY elansary.java /test
+
+RUN javac elansary.java
+
+CMD java elansary
